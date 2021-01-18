@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="WS10Association">
+  <ClassDiagramComponents>
+    <Class name="A" package="espe.edu.ec.ws10classimplementation" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="b" type="B" visibility="private"/>
+        <Field name="cs" type="ArrayList&lt;C&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="B" name="b"/>
+          <Argument type="ArrayList&lt;C&gt;" name="cs"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="m" returnType="C" visibility="public">
+          <Argument type="D" name="d"/>
+        </Method>
+        <Method name="m" returnType="D" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getB" returnType="B" visibility="public"/>
+        <Method name="setB" returnType="void" visibility="public">
+          <Argument type="B" name="b"/>
+        </Method>
+        <Method name="getCs" returnType="ArrayList&lt;C&gt;" visibility="public"/>
+        <Method name="setCs" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;C&gt;" name="cs"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="B" package="espe.edu.ec.ws10classimplementation" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+        <Field name="b" type="int" visibility="private"/>
+        <Field name="es" type="E[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="E[]" name="es"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="m1" returnType="C" visibility="public">
+          <Argument type="F" name="f"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getA" returnType="int" visibility="public"/>
+        <Method name="setA" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="getB" returnType="int" visibility="public"/>
+        <Method name="setB" returnType="void" visibility="public">
+          <Argument type="int" name="b"/>
+        </Method>
+        <Method name="getEs" returnType="E[]" visibility="public"/>
+        <Method name="setEs" returnType="void" visibility="public">
+          <Argument type="E[]" name="es"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="C" package="espe.edu.ec.ws10classimplementation" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="f" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="m" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="D" package="espe.edu.ec.ws10classimplementation" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="m" returnType="B" visibility="public"/>
+        <Method name="m" returnType="int" visibility="public">
+          <Argument type="F" name="f"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="E" package="espe.edu.ec.ws10classimplementation" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="F" package="espe.edu.ec.ws10classimplementation" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="WS10Associations" package="ws10associations" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="cs" source="espe.edu.ec.ws10classimplementation.A" target="espe.edu.ec.ws10classimplementation.C" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;C&gt;"/>
+    <UseRelation source="espe.edu.ec.ws10classimplementation.B" target="espe.edu.ec.ws10classimplementation.E" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="b" source="espe.edu.ec.ws10classimplementation.A" target="espe.edu.ec.ws10classimplementation.B" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="espe.edu.ec.ws10classimplementation.A" target="espe.edu.ec.ws10classimplementation.D" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="espe.edu.ec.ws10classimplementation.D" target="espe.edu.ec.ws10classimplementation.B" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="espe.edu.ec.ws10classimplementation.D" target="espe.edu.ec.ws10classimplementation.F" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="espe.edu.ec.ws10classimplementation.A" target="espe.edu.ec.ws10classimplementation.B" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="espe.edu.ec.ws10classimplementation.A" target="espe.edu.ec.ws10classimplementation.C" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="espe.edu.ec.ws10classimplementation.B" target="espe.edu.ec.ws10classimplementation.F" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
