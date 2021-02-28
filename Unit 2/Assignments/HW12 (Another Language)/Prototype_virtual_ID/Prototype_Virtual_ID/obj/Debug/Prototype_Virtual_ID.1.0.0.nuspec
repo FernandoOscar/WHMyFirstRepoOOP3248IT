@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Prototype_Virtual_ID</id>
+    <version>1.0.0</version>
+    <authors>Prototype_Virtual_ID</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\User\Downloads\Prototype_virtual_ID\Prototype_Virtual_ID\bin\Debug\netcoreapp3.1\Prototype_Virtual_ID.runtimeconfig.json" target="lib\netcoreapp3.1\Prototype_Virtual_ID.runtimeconfig.json" />
+    <file src="C:\Users\User\Downloads\Prototype_virtual_ID\Prototype_Virtual_ID\bin\Debug\netcoreapp3.1\Prototype_Virtual_ID.dll" target="lib\netcoreapp3.1\Prototype_Virtual_ID.dll" />
+  </files>
+</package>
